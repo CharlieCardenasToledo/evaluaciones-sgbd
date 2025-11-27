@@ -254,7 +254,8 @@ COMMIT;
 **Ayudas:**
 - Para la fecha de transacción use: `'2018-12-31'` (último día del año con datos)
 - Para año/mes de actividad use: `year = 2018`, `month = 12`
-- Tasa de conversión: 200 puntos ≈ 10 CAD (dólares canadienses - calcule proporcionalmente)
+- Tasa de conversión: 200 puntos ≈ 10 CAD (el símbolo ≈ significa "aproximadamente igual a")
+  - Esto significa que cada 200 puntos equivalen aproximadamente a 10 dólares canadienses
   - Ejemplo: 5000 puntos = (5000 ÷ 200) × 10 = 250.00 CAD
 - El status debe ser: `'COMPLETED'`
 
