@@ -1,8 +1,3 @@
-Sistemas de Gestión de Bases de Datos
-
-**Nombre del estudiante:** _______________________________________________
-**Fecha:** _______________________________________________
-**Duración:** 120 minutos
 **Puntaje total:** 7.0 puntos
 
 ## Introducción
