@@ -40,26 +40,19 @@ La administración desea implementar un sistema robusto de gestión de lealtad, 
 
 Antes de comenzar la evaluación, debe importar la base de datos en el siguiente orden:
 
-**Opción 1: Importación Manual (línea de comandos)**
+**Opción 1: MySQL Workbench - Abrir y ejecutar archivos SQL**
 
-```bash
-# Paso 1: Crear la estructura de la base de datos
-mysql -u root -p < 01_crear_base_datos_airline_loyalty.sql
+1. Abrir MySQL Workbench
+2. Conectar a tu servidor MySQL
+3. Abrir el archivo SQL: `File → Open SQL Script`
+4. Ejecutar los archivos en el siguiente orden:
+   - **Paso 1:** Abrir y ejecutar `01_crear_base_datos_airline_loyalty.sql`
+   - **Paso 2:** Abrir y ejecutar `Dump20251124/airline_loyalty_db_calendar.sql`
+   - **Paso 3:** Abrir y ejecutar `Dump20251124/airline_loyalty_db_customer_loyalty_history.sql`
+   - **Paso 4:** Abrir y ejecutar `Dump20251124/airline_loyalty_db_customer_flight_activity.sql`
+   - **Paso 5:** Abrir y ejecutar `Dump20251124/airline_loyalty_db_routines.sql`
 
-# Paso 2: Cargar datos de calendar
-mysql -u root -p airline_loyalty_db < Dump20251124/airline_loyalty_db_calendar.sql
-
-# Paso 3: Cargar datos de customer_loyalty_history
-mysql -u root -p airline_loyalty_db < Dump20251124/airline_loyalty_db_customer_loyalty_history.sql
-
-# Paso 4: Cargar datos de customer_flight_activity
-mysql -u root -p airline_loyalty_db < Dump20251124/airline_loyalty_db_customer_flight_activity.sql
-
-# Paso 5: Cargar rutinas y procedimientos
-mysql -u root -p airline_loyalty_db < Dump20251124/airline_loyalty_db_routines.sql
-```
-
-**Opción 2: MySQL Workbench**
+**Opción 2: MySQL Workbench - Data Import**
 
 1. Abrir MySQL Workbench
 2. Conectar a tu servidor MySQL
