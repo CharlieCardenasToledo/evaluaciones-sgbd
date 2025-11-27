@@ -505,10 +505,6 @@ Entrega al finalizar la evaluación
 
 - Revisa los contenidos de las semanas 1-4 antes de la evaluación
 - Familiarízate con el esquema de la base de datos `airline_loyalty_db`
-- **Administra tu tiempo:**
-  - Fase 1: 45 minutos (transacciones COMMIT y ROLLBACK)
-  - Fase 2: 40 minutos (logging y crash recovery)
-  - Fase 3: 35 minutos (EXPLAIN ANALYZE y optimización)
 - **Fase 1:** Verifica que el cliente tenga puntos suficientes antes de intentar la transacción
 - **Fase 2:** Relaciona el redo log con la Durabilidad (D de ACID) y piensa en términos de "guardar el progreso"
 - **Fase 3:** Busca las palabras clave "Table scan" e "Index lookup" en la salida de EXPLAIN ANALYZE
