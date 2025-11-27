@@ -7,9 +7,14 @@
 USE airline_loyalty_db;
 
 -- 1. Restaurar puntos del cliente de prueba
+-- Nota: Ajusta el valor de available_points según los datos originales de tu cliente
 UPDATE customer_loyalty_history
-SET available_points = 268287
-WHERE loyalty_number = 689839;
+SET available_points = (
+    SELECT SUM(points_accumulated) - SUM(points_redeemed)
+    FROM customer_flight_activity
+    WHERE loyalty_number = 100018
+)
+WHERE loyalty_number = 100018;
 
 -- 2. Limpiar transacciones de prueba
 TRUNCATE TABLE redemption_transactions;
@@ -18,7 +23,7 @@ TRUNCATE TABLE redemption_transactions;
 UPDATE customer_flight_activity
 SET points_redeemed = 0,
     dollar_cost_points_redeemed = 0.00
-WHERE loyalty_number = 689839
+WHERE loyalty_number = 100018
   AND year = 2018
   AND month = 12;
 
@@ -36,8 +41,8 @@ SELECT
     loyalty_number,
     available_points as puntos_actuales
 FROM customer_loyalty_history
-WHERE loyalty_number = 689839;
--- Debe mostrar: 268287 puntos
+WHERE loyalty_number = 100018;
+-- Debe mostrar los puntos restaurados
 
 SELECT COUNT(*) as transacciones FROM redemption_transactions;
 -- Debe mostrar: 0
@@ -46,7 +51,7 @@ SELECT
     points_redeemed,
     dollar_cost_points_redeemed
 FROM customer_flight_activity
-WHERE loyalty_number = 689839
+WHERE loyalty_number = 100018
   AND year = 2018
   AND month = 12;
 -- Debe mostrar: 0 y 0.00
