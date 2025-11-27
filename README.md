@@ -75,6 +75,22 @@ SELECT COUNT(*) FROM customer_loyalty_history;  -- Debe mostrar 16,739 registros
 SELECT COUNT(*) FROM customer_flight_activity;  -- Debe mostrar 392,938 registros
 ```
 
+**Script de Reset (Opcional):**
+
+Si cometes un error durante la evaluación o necesitas reiniciar, está disponible el archivo `reset_evaluacion.sql` que restaura la base de datos al estado inicial.
+
+Para usarlo:
+1. Abrir MySQL Workbench
+2. Abrir el archivo: `File → Open SQL Script`
+3. Seleccionar `reset_evaluacion.sql`
+4. Ejecutar el script completo
+
+Este script:
+- Restaura los puntos del cliente de prueba
+- Limpia las transacciones de canje
+- Elimina los índices creados durante la evaluación
+- Restaura los datos a su estado original
+
 ---
 
 ## DICCIONARIO DE DATOS
