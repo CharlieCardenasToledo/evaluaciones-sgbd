@@ -1,4 +1,4 @@
-**Puntaje total:** 7.0 puntos
+**Puntaje total:** 8.0 puntos
 
 ## Introducción
 
