@@ -261,7 +261,7 @@ COMMIT;
 **Ayudas:**
 - Para la fecha de transacción use: `'2018-12-31'` (último día del año con datos)
 - Para año/mes de actividad use: `year = 2018`, `month = 12`
-- Tasa de conversión: 200 puntos ≈ 10 CAD (calcule proporcionalmente)
+- Tasa de conversión: 200 puntos ≈ 10 CAD (dólares canadienses - calcule proporcionalmente)
   - Ejemplo: 5000 puntos = (5000 ÷ 200) × 10 = 250.00 CAD
 - El status debe ser: `'COMPLETED'`
 
@@ -467,14 +467,6 @@ ON customer_loyalty_history (______, ______);
 > **Pista:** Piensa en cómo MySQL puede buscar directamente las filas que cumplen AMBAS condiciones (Aurora + Ontario) en un solo paso, en vez de leer todas las filas y luego filtrar.
 
 ---
-
-## CRITERIOS DE EVALUACIÓN
-
-- Correctitud técnica
-- Coherencia entre fases
-- Justificación fundamentada
-- Aplicación de conceptos de transacciones, logging y optimización
-- Claridad y presentación profesional
 
 ## FORMATO DE ENTREGA
 
